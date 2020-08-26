@@ -1,35 +1,30 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import { BookContext } from "../context/context";
-import { Button, Col } from 'antd';
+import { Button } from "antd";
 
 const BookCartItem = (cart) => {
   const { books, removeCart } = useContext(BookContext);
   const book = books.filter((book) => book.id === cart.cart.idBook);
   const { title, coverImageSrc, pricerent } = book[0];
-
+  
   const handleRemoveCart = () => {
     removeCart(cart.cart.idBook);
   };
   return (
-    <Col className="gutter-row" span={6}>
-        <div className="cart-item">
-          <div className="content">
-            <div className="image-content">
-              <img src={coverImageSrc} alt={title} className="image-repsonsive product-image" />
-            </div>
-            <div>
-              <h4 className="h4-title">{title}</h4>
-              <p className="p-price">Price Rent: {pricerent}</p>
-            </div>
-
-            <div className="col-lg-3 col-md-3 col-sm-12 col-12">
-              <Button onClick={handleRemoveCart} type="default" danger >
-                Remove
-            </Button>
-            </div>
+    <div className="category clearFix">
+      <div className="category__ImageContainer">
+        <img className="category__Image" alt={title} src={coverImageSrc} />
+      </div>
+      <div className="wtrButtonContainer" style={{width: "80px", height: "40px"}}>
+          <Button onClick={handleRemoveCart} danger style={{width: "80px", marginTop: "5px"}}>Remove</Button>
+      </div>
+        <div className="content">
+          <div>
+            <h4 className="h4-title">{title}</h4>
+            <p className="p-price">Price Rent: {pricerent}</p>
           </div>
         </div>
-    </Col>
+    </div>
   );
 };
 

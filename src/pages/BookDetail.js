@@ -14,7 +14,7 @@ import SideBarRight from "../layout/SideBarRight";
 export default function BookDetail() {
   const { id } = useParams();
   const [book, setBookDetail] = useState({});
-
+  const [disableBtn, setDisableBtn] = useState(true)
   const { addCart } = useContext(BookContext);
 
   const handleAddCart = () => {
@@ -23,9 +23,17 @@ export default function BookDetail() {
   useEffect(() => {
     axios
       .get(`http://localhost:4000/books?id=${id}`)
-      .then((jsonResponse) => setBookDetail(jsonResponse.data[0]));
+      .then((jsonResponse) => {
+        setBookDetail(jsonResponse.data[0])
+        if(jsonResponse.data[0].status === "Not borrowing") {
+          setDisableBtn(false)
+        } else if(jsonResponse.data[0].status === "borrowing"){
+          setDisableBtn(true)
+        }
+      });
   }, []);
-  return (
+ 
+ return (
     <div
       className="mainContentContainer"
       style={{ backgroundColor: "#FFFF", paddingTop: "50px" }}
@@ -65,7 +73,7 @@ export default function BookDetail() {
                 </div>
                 <div className="wtrButtonContainer">
                   <div className="wtrDown wtrLeft wtrStatusToRead">
-                    <Button onClick={handleAddCart}>Want to read</Button>
+                    <Button onClick={handleAddCart} disabled={disableBtn}>Want to borrow</Button>
                     <div className="wtrPrompt wtrPromptToReview">
                       <a href="/review/edit/11870085">Write a review</a>
                     </div>
@@ -73,16 +81,7 @@ export default function BookDetail() {
                   <div className="wtrDown wtrRight">
                     <button className="wtrShelfButton"></button>
                   </div>
-                  <div className="ratingStars wtrRating">
-                    <div className="starsErrorTooltip hidden">
-                      Error rating book. Refresh and try again.
-                    </div>
-                    <div className="myRating uitext greyText">
-                      Rate this book
-                    </div>
-                    <div className="clearRating uitext">Clear rating</div>
-                    <Rate allowHalf defaultValue={book.rating} />
-                  </div>
+                 
                 </div>
                 <div className="previewButtonContainer"></div>
                 <br />
@@ -266,12 +265,12 @@ export default function BookDetail() {
             <div id="lazy_loadable_view">
               <div className="clearFloats bigBox">
                 <div className="h2Container gradientHeaderContainer">
-                  <h2 className="brownBackground">Reader Q&amp;A</h2>
+                  <h2 className="brownBackground">Review</h2>
                 </div>
                 <div className="bigBoxBody">
                   <div className="bigBoxContent containerWithHeaderContent">
                     <div className="communityQuestionSubTitle communityQuestionPrompt">
-                      Ask the Goodreads community a question about
+                     Review about this book: 
                       <span className="bookLink"> {book.title}</span>
                     </div>
                     <p className="readerQAFormRateLimitMessage js-ReaderQAForm-rateLimitMessage">
@@ -279,11 +278,9 @@ export default function BookDetail() {
                       to keep up, we limit members to 10 questions per author
                       per day.
                     </p>
-                    <BookComment />
+                    <BookComment book={book}/>
                     <div className="elementListBrownSeparator"></div>
-                    <div className="communityQuestionSubTitle">
-                      Popular Answered Questions
-                    </div>
+                   
                     <div className="clear"></div>
                   </div>
                 </div>

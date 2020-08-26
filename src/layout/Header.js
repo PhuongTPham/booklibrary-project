@@ -5,7 +5,7 @@ import Search from "../components/SearchBook";
 
 const Header = () => {
   const { carts } = useContext(BookContext);
-  return (
+   return (
     <div className="siteHeader">
       <header>
         <div className="siteHeader__topLine gr-box gr-box--withShadow">
@@ -16,11 +16,7 @@ const Header = () => {
                 type="button"
               ></button>
             </div>
-            <a
-              href="/"
-              className="siteHeader__logo"
-              title="Libraries Home"
-            />
+            <a href="/" className="siteHeader__logo" title="Libraries Home" />
             <nav className="siteHeader__primaryNavInline">
               <ul role="menu" className="siteHeader__menuList">
                 <li className="siteHeader__topLevelItem siteHeader__topLevelItem--home">
@@ -29,9 +25,9 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="siteHeader__topLevelItem siteHeader__topLevelItem--home">
-                  <Link to="/book-cart" className="siteHeader__topLevelLink">
+                  {/* <Link to="/book-cart" className="siteHeader__topLevelLink">
                     Borrow Book
-                  </Link>
+                  </Link> */}
                 </li>
                 <li className="siteHeader__topLevelItem siteHeader__topLevelItem--home">
                   <Link
@@ -51,17 +47,17 @@ const Header = () => {
                 <li className="personalNav__listItem"></li>
 
                 <li className="personalNav__listItem">
-                  <a
+                  {/* <a
                     href="/book-cart"
                     title="Carts"
                     className="headerPersonalNav"
                   >
                     <span className="headerPersonalNav__icon headerPersonalNav__icon--inbox"></span>
-                  </a>
+                  </a> */}
                   <Link to="/book-cart" className="siteHeader__topLevelLink">
                     Want to Rent (
                     <span style={{ color: "#FF0000" }}>
-                      {carts.length !== 0 ? carts.length : 0}
+                        {carts.length !== 0 ? carts.length : 0}
                     </span>
                     )
                   </Link>

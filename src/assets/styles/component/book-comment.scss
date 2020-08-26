@@ -682,10 +682,6 @@ p {
 .readerQAForm .textInput.expanded {
 	height: 125px
 }
-.readerQAFormActions {
-	display: none
-}
-
 .readerQAFormActions.show {
 	display: block
 }
@@ -696,4 +692,43 @@ p {
 .ui.form textarea.expanded{
 	min-height: 8em;
 	height: 12em;
+}
+.readerQAFormActions .formAction {
+    float: right;
+    text-align: right;
+}
+.gr-form__submitButton {
+    border-radius: 3px;
+    border: 1px solid #D6D0C4;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 14px;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    background-color: #F4F1EA;
+    line-height: 1;
+	padding: 8px 12px
+}
+.gr-form__secondaryAction, .gr-form--compact__secondaryAction {
+    display: inline-block;
+    color: #181818;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    line-height: 1;
+    text-transform: capitalize;
+    font-size: 13px;
+    padding: 8px 12px;
+    border: 0;
+    background: none;
+    font-weight: normal;
+}
+.gr-form__submitButton+.gr-form__secondaryAction {
+    margin-left: 5px;
 }

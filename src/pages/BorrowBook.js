@@ -1,12 +1,13 @@
-import React, { useState,useContext } from "react";
+import React, { useState,useContext, useEffect } from "react";
 
 import { Form, Button } from "semantic-ui-react";
 import * as BookAPI from "../utils/apiURLs"
 import { BookContext } from "../context/context";
-
+import swal from "sweetalert";
+import book from "../data.json";
 function BorrowBook() {
     const { books, carts } = useContext(BookContext);
-   
+    const [status, setStatusBook] = useState("");
     const getSubtotal = (data, carts) => {
     let subtotal = 0;
     carts.forEach((cart) => {
@@ -44,6 +45,7 @@ function BorrowBook() {
     startDate: "",
     dueDate: "",
   }
+  const bookOther = book.itemrent.map(item => item.idBooks)
   const [rentbook, setRentBook] = useState(initRent);
   const handleChange = e => {
     const { name, value } = e.target
@@ -57,7 +59,22 @@ function BorrowBook() {
         || rentbook.dueDate !== null) {
       BookAPI.rentBook(rentbook)
     }
+    swal({
+      title: "You have borrowed successfully!",
+      text: "Please, you come to the reception to get and pay it",
+      icon: "success",
+      button: "Thanks you",
+    });
   }
+  useEffect(() => {
+    for(let i = 1 ; i<= bookOther.length; i++){
+      books.forEach(bookStatus => {
+        if( i === bookStatus.id){
+          setStatusBook("borrowing")
+        }
+      })
+    }
+  }, [])
   return (
     <div className="borrow-book">
       <Form size="large" onSubmit={handleSubmit}>
@@ -107,7 +124,7 @@ function BorrowBook() {
             value={rentbook.dueDate}
             onChange={handleChange} />
         </Form.Field> 
-        <Button type="submit">
+        <Button type="submit" size="large">
           Submit
         </Button>
       </Form>

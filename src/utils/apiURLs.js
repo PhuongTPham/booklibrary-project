@@ -4,9 +4,6 @@ export const getAll = () => {
   axios.get("http://localhost:4000/books")
     .then(response => response.data)
 }
-export const getAllComment = () => {
-  axios.get('http://localhost:4000/comments').then(response => response.data)
-}
 export const getById = bookId => {
   axios.get(`http://localhost:4000/books/${bookId}`)
     .then(response => response.data[0])
@@ -20,21 +17,20 @@ export const rentBook = data => {
   axios.post(`http://localhost:4000/itemrent`, data).then(response => response.data)
 }
 
-export const getAllBestSeller = listBest => {
-  axios.get("http://localhost:4000/bestseller")
-    .then(response => response.data)
+export async function addGivingBook(gift) {
+   const res = await axios.post("http://localhost:4000/givingbook", gift)
+   return res.data
 }
-
-export const addGivingBook = gift => {
-  axios.post("http://localhost:4000/givingbook", gift).then(response => { return response.data })
+export async function getGivingBook() {
+  const res = await axios.get("http://localhost:4000/givingbook")
+  return res.data
 }
-export const getGivingBook = gift => {
-  return axios.get("http://localhost:4000/givingbook")
-    .then(response => {
-    return response.data
-  })
+export async function addComment (comment) {
+  const res = await axios.post("http://localhost:4000/comments", comment)
+  return res.data;
 }
-export const addComment = comment => {
-  axios.post("http://localhost:4000/comments", comment).then(response => response.data)
+export async function getAllComment() {
+  const res = await axios.get("http://localhost:4000/comments")
+  return res.data
 }
 

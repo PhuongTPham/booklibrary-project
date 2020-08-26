@@ -1,7 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form } from "semantic-ui-react";
-
-const BookComment = () => {
+import * as BookAPI from "../utils/apiURLs"
+const BookComment = ({book}) => {
+    let idBook = book.id;
+    const initComment = {
+        idUser: Math.random().toString(36).substring(10),
+        bookId: idBook,
+        body: "",
+        rating: "4.2"
+    }
+    const [comment, setComment] = useState(initComment)
+    const handleChange = e => {
+         const { name, value } = e.target;
+        setComment({ ...comment, [name]: value });
+    }
+    const handleSubmit = e => {
+        e.preventDefault();
+        BookAPI.addComment({
+            body: comment.body,
+            bookId: book.id,
+            idUser: Math.random().toString(36).substring(10),
+            rating: "4.2"
+        }).then(res => console.log(res))
+    }
     return (
         <div className="readerQAFormContainer js-readerQAForm">
             <div className="formSubmissionNotification js-notification">
@@ -17,13 +38,16 @@ const BookComment = () => {
                 >
                     <textarea type="text" placeholder="Ask anything about the book"
                         className="textInput"
-                        maxLength="421" id="qaTextArea" style={{minHeight: "55px", height: "55px"}}
+                        name="body"
+                        value={comment.body}
+                        onChange={handleChange}
+                        maxLength="421" id="qaTextArea" style={{ height: "55px"}}
                     />
                 </Form.Field>
                 <div className="readerQAFormActions hiddenContent gr-form__actions">
                     <div className="formAction gr-form__actions">
-                        <button className="primaryAction submitAction gr-form__submitButton" type="submit">
-                            Ask
+                        <button className="primaryAction submitAction gr-form__submitButton" type="submit" onClick={handleSubmit}>
+                            Comment
                         </button>
                         <div className="secondaryAction cancelAction gr-form__secondaryAction">
                             Cancel

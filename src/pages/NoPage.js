@@ -1,20 +1,24 @@
 import React from "react";
 import { Button } from "antd";
-import { Link } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 export default function NotFoundPage() {
+    let history = useHistory();
+
+  const handleClick = () => {
+    history.push("/")
+  }
   return (
     <div className="mainContentContainer" style={{paddingTop: "100px"}}>
       <div className="mainContent">
-        <div className="mainContentFloat ">
-          <p>404 Not Found Page</p>
+        <div className="mainContentFloat " style={{textAlign: "center"}}>
+          <h2 >404 Not Found Page</h2>
           <Button
             variant="contained"
-            color="primary"
-            component={Link}
-            to="/"
+            onClick={handleClick}
             size="large"
+            style={{width: "150px", color: "white", backgroundColor: "black" }}
           >
-            Back to Home
+            Back to Home 
           </Button>
         </div>
       </div>

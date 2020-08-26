@@ -24,6 +24,7 @@ export const BookProvider = ({ children }) => {
     localStorage.setItem("carts", JSON.stringify(state.carts));
   }, [state.carts]);
 
+
   //actions
   const fetchCarts = fetchedCarts => {
     dispatch({
