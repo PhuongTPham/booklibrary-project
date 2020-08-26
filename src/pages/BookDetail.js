@@ -66,10 +66,6 @@ export default function BookDetail() {
                 <div className="wtrButtonContainer">
                   <div className="wtrDown wtrLeft wtrStatusToRead">
                     <Button onClick={handleAddCart}>Want to read</Button>
-                    <div className="wtrPrompt ratingThanks">
-                      Thanks for rating.
-                      <a href="/review/edit/11870085">Write a review</a>
-                    </div>
                     <div className="wtrPrompt wtrPromptToReview">
                       <a href="/review/edit/11870085">Write a review</a>
                     </div>
@@ -176,17 +172,6 @@ export default function BookDetail() {
                     </h2>
                   </div>
                   <ul className="buyButtonBar left">
-                    <li>
-                      <a
-                        className="buttonBar"
-                        target="_blank"
-                        rel="no_follow noopener noreferrer"
-                        id="buyButton"
-                        href={urlDownload}
-                      >
-                        Amazon
-                      </a>
-                    </li>
                     <li></li>
                     <li></li>
                     <li>
@@ -279,23 +264,6 @@ export default function BookDetail() {
               </div>
             </div>
             <div id="lazy_loadable_view">
-              <div id="friendReviews" className=" clearFloats bigBox">
-                <div className="h2Container gradientHeaderContainer">
-                  <h2 className="brownBackground">Friend Reviews</h2>
-                </div>
-                <div className="bigBoxBody">
-                  <div className="bigBoxContent containerWithHeaderContent">
-                    <span className="mediumText">
-                      None of your friends have reviewed this book yet.
-                      <a className="actionLink" href="/friend/invite">
-                        Ask them »
-                      </a>
-                    </span>
-                    <div className="clear"></div>
-                  </div>
-                </div>
-                <div className="bigBoxBottom"></div>
-              </div>
               <div className="clearFloats bigBox">
                 <div className="h2Container gradientHeaderContainer">
                   <h2 className="brownBackground">Reader Q&amp;A</h2>

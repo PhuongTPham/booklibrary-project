@@ -24,7 +24,7 @@ function App() {
         <Header />
         <BookProvider>
           <Switch>
-            <Route exact path="/booklibrary-project" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/book-cart" component={BookCart} />
             <Route path="/book/details/:id" component={BookDetail} />
             <Route path="/author/:authorId" component={BookAuthor} />

@@ -17,7 +17,7 @@ const Header = () => {
               ></button>
             </div>
             <a
-              href="/booklibrary-project"
+              href="/"
               className="siteHeader__logo"
               title="Libraries Home"
             />

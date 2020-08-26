@@ -1,8 +1,6 @@
 import React from "react";
 import { twiligtSrc, hungerSrc, diverScr, prideSrc } from "../constant/index";
 import AboutAuthor from "../components/AboutAuthor";
-import BookByOtherAuthor from "../components/BookByOtherAuthor";
-import VideoBookAuthor from "../components/author/VideoBookAuthor";
 const SideBarRight = ({ book }) => {
   return (
     <div className="rightContainer">
@@ -105,35 +103,6 @@ const SideBarRight = ({ book }) => {
         </div>
       </div>
       <AboutAuthor />
-      <BookByOtherAuthor />
-      <VideoBookAuthor />
-      <div className=" clearFloats bigBox">
-        <div className="h2Container gradientHeaderContainer">
-          <h2 className="brownBackground">
-            <a href="/trivia/work/16827462-the-fault-in-our-stars">
-              Trivia About The Fault in Our ...
-            </a>
-          </h2>
-        </div>
-        <div className="bigBoxBody">
-          <div className="bigBoxContent containerWithHeaderContent">
-            <div className="mediumText">
-              201 trivia questions
-              <br />
-              31 quizzes
-            </div>
-            <a
-              className="actionLink"
-              style={{ float: "right" }}
-              href="/trivia/work/16827462-the-fault-in-our-stars"
-            >
-              More quizzes &amp; trivia...
-            </a>
-            <div className="clear"></div>
-          </div>
-        </div>
-        <div className="bigBoxBottom"></div>
-      </div>
       <div className=" clearFloats bigBox">
         <div className="h2Container gradientHeaderContainer">
           <h2 className="brownBackground">

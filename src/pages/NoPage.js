@@ -3,7 +3,7 @@ import { Button } from "antd";
 import { Link } from "react-router-dom";
 export default function NotFoundPage() {
   return (
-    <div className="mainContentContainer">
+    <div className="mainContentContainer" style={{paddingTop: "100px"}}>
       <div className="mainContent">
         <div className="mainContentFloat ">
           <p>404 Not Found Page</p>
@@ -11,7 +11,7 @@ export default function NotFoundPage() {
             variant="contained"
             color="primary"
             component={Link}
-            to="/home"
+            to="/"
             size="large"
           >
             Back to Home

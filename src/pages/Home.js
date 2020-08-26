@@ -7,7 +7,6 @@ function Home() {
         <div className="gcaMasthead__container gcaMasthead__container--current">
           <header className="gcaMasthead">
             <div className="gcaMasthead__content">
-              <div className="gcaMasthead__logo gcaMasthead__logo--current"></div>
               <div className="gcaMasthead__body">
                 <div className="gcaMasthead__topbar">
                   <div className="gcaMasthead__topbarBox gcaMasthead__topbarBox--votesCast">
@@ -53,52 +52,6 @@ function Home() {
               </div>
               <List />
               <div id="landingRight">
-                <div className="gcaSidebarItem" id="choiceTalk">
-                  <h3 className="gr-h3">Choice Chatter</h3>
-                  <dl>
-                    <dt>
-                      <a
-                        className="gcaLink"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.oprahmag.com/entertainment/books/g30168769/goodreads-choice-awards-best-books-2019/"
-                      >
-                        The 20 Best Books of 2019, According to the Goodreads
-                        Choice Awards
-                      </a>
-                    </dt>
-                    <dd>www.oprahmag.com</dd>
-                    <dt>
-                      <a
-                        className="gcaLink"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.buzzfeednews.com/article/ariannarebolini/winners-goodreads-best-books-2019"
-                      >
-                        Here Are The Winners Of The 2019 Goodreads Choice Awards
-                      </a>
-                    </dt>
-                    <dd>www.buzzfeed.com</dd>
-                    <dt>
-                      <a
-                        className="gcaLink"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.today.com/shop/best-books-2019-according-goodreads-readers-t169539"
-                      >
-                        These Are the Top 20 Books of 2019, According to
-                        Goodreads Users
-                      </a>
-                    </dt>
-                    <dd>www.today.com</dd>
-                  </dl>
-                  <a
-                    className="gcaMoreLink"
-                    href="/choiceawards/2019/choice_chatter"
-                  >
-                    <div className="more">More Chatter...</div>
-                  </a>
-                </div>
                 <div className="gcaSidebarItem" id="bestOf">
                   <h3 className="gr-h3">“Best Of” Lists</h3>
                   <div className="u-marginBottomSmall">
