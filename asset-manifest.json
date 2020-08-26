@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/booklibrary-project/static/css/main.0e84bdcc.chunk.css",
-    "main.js": "/booklibrary-project/static/js/main.0c5db950.chunk.js",
-    "main.js.map": "/booklibrary-project/static/js/main.0c5db950.chunk.js.map",
+    "main.css": "/booklibrary-project/static/css/main.a467465f.chunk.css",
+    "main.js": "/booklibrary-project/static/js/main.6471f227.chunk.js",
+    "main.js.map": "/booklibrary-project/static/js/main.6471f227.chunk.js.map",
     "runtime-main.js": "/booklibrary-project/static/js/runtime-main.692cc8af.js",
     "runtime-main.js.map": "/booklibrary-project/static/js/runtime-main.692cc8af.js.map",
     "static/css/2.c83e3fd9.chunk.css": "/booklibrary-project/static/css/2.c83e3fd9.chunk.css",
-    "static/js/2.2f93fe5a.chunk.js": "/booklibrary-project/static/js/2.2f93fe5a.chunk.js",
-    "static/js/2.2f93fe5a.chunk.js.map": "/booklibrary-project/static/js/2.2f93fe5a.chunk.js.map",
+    "static/js/2.adaa9ca9.chunk.js": "/booklibrary-project/static/js/2.adaa9ca9.chunk.js",
+    "static/js/2.adaa9ca9.chunk.js.map": "/booklibrary-project/static/js/2.adaa9ca9.chunk.js.map",
     "index.html": "/booklibrary-project/index.html",
-    "precache-manifest.72739ad9b93c3d77702bad77dabf3ad6.js": "/booklibrary-project/precache-manifest.72739ad9b93c3d77702bad77dabf3ad6.js",
+    "precache-manifest.559d174fbe41e4b560d92fd2c89dfe8f.js": "/booklibrary-project/precache-manifest.559d174fbe41e4b560d92fd2c89dfe8f.js",
     "service-worker.js": "/booklibrary-project/service-worker.js",
     "static/css/2.c83e3fd9.chunk.css.map": "/booklibrary-project/static/css/2.c83e3fd9.chunk.css.map",
-    "static/css/main.0e84bdcc.chunk.css.map": "/booklibrary-project/static/css/main.0e84bdcc.chunk.css.map",
-    "static/js/2.2f93fe5a.chunk.js.LICENSE.txt": "/booklibrary-project/static/js/2.2f93fe5a.chunk.js.LICENSE.txt",
+    "static/css/main.a467465f.chunk.css.map": "/booklibrary-project/static/css/main.a467465f.chunk.css.map",
+    "static/js/2.adaa9ca9.chunk.js.LICENSE.txt": "/booklibrary-project/static/js/2.adaa9ca9.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/booklibrary-project/static/media/shopping-cart.e39b585b.svg",
     "static/media/semantic.min.css": "/booklibrary-project/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.692cc8af.js",
     "static/css/2.c83e3fd9.chunk.css",
-    "static/js/2.2f93fe5a.chunk.js",
-    "static/css/main.0e84bdcc.chunk.css",
-    "static/js/main.0c5db950.chunk.js"
+    "static/js/2.adaa9ca9.chunk.js",
+    "static/css/main.a467465f.chunk.css",
+    "static/js/main.6471f227.chunk.js"
   ]
 }
