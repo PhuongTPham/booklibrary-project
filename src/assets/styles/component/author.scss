@@ -1,0 +1,87 @@
+.bookAuthorProfile__topContainer {
+	margin-bottom: 12px
+}
+
+.bookAuthorProfile__photoContainer {
+	display: inline-block;
+	margin-right: 8px
+}
+.bookAuthorProfile__photo {
+	background-size: cover;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px
+}
+.bookAuthorProfile__widgetContainer {
+	display: inline-block;
+	vertical-align: bottom
+}
+
+.bookAuthorProfile__name {
+	display: inline-block;
+	font-family: "Merriweather", "Georgia", serif;
+	font-size: 16px;
+	font-weight: bold
+}
+
+.bookAuthorProfile__name a {
+	color: #000000
+}
+.bookAuthorProfile__followerCount {
+	color: #999999;
+	margin-bottom: 4px;
+	margin-top: 4px
+}
+.authorFollowButtonContainer {
+	display: inline-block;
+	margin-right: 10px;
+	width: 140px
+}
+.gr-button--fullWidth {
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%
+}
+.bookAuthorProfile__about {
+    font-size: 14px;
+}
+.tooltipTrigger {
+    display: inline-block;
+    position: relative;
+}
+.elementList {
+	border-bottom: 1px solid #d7d7d7;
+	font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+	padding: 5px;
+	zoom: 1
+}
+.videoThumbnail {
+    position: relative;
+}
+.videoThumbnail .playIcon {
+	background: url("/assets/play_video.png");
+	position: absolute;
+	left: 45px;
+	top: 35px;
+	width: 42px;
+	height: 27px;
+	z-index: 2;
+	cursor: pointer
+}
+
+.videoThumbnail .bigPlayIcon {
+	left: 138px;
+	top: 107px
+}
+.moreLink {
+    display: block;
+    margin-top: 1em;
+    text-align: right;
+}
+.actionLink {
+    color: #00635d;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}

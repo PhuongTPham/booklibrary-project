@@ -1,0 +1,35 @@
+#landingLeft {
+	float: right;
+	margin: 0 20px;
+	width: 740px
+}
+
+#landingLeft #categories {
+	border-top: 0
+}
+.categoryContainer .category {
+	background: rgba(216, 216, 216, 0.3);
+	padding-bottom: 8px;
+	width: 180px
+}
+
+.categoryContainer .category:hover {
+	background: #D8D8D8
+}
+.categoryContainer {
+	margin-left: -3px;
+	margin-right: -3px
+}
+.category {
+	float: left;
+	width: 173px;
+	margin: 0px 3px 6px 3px;
+	background-color: #F9F7F0;
+	color: #181818;
+	text-align: center
+}
+
+.category:hover {
+	background: #EEE8D5;
+	text-decoration: none
+}

@@ -1,0 +1,116 @@
+.category__winnerImageContainer {
+	width: 153px;
+	height: 230px;
+	margin: 0 auto
+}
+
+.category__winnerImage {
+	width: 100%;
+	max-height: 100%
+}
+
+.wtrButtonContainer {
+    margin: 5px auto 10px auto;
+}
+.ant-card-body {
+  padding: 15px !important;
+}
+.ant-card-cover img {
+  width: 200px;
+  height: 280px;
+  margin: 18px;
+  text-align: center;
+  margin-bottom: 12px;
+  display: block;
+}
+.ant-card-meta-title {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  text-align: left;
+  position: relative;
+  color: #242424;
+  max-height: 43px;
+  letter-spacing: 0.1px;
+  text-overflow: ellipsis;
+}
+.ant-card-meta-detail > div:not(:last-child) {
+     margin-bottom: 0px; 
+}
+.ant-card-meta-description {
+  padding: 5px 0 0;
+  color: #777;
+  font-size: 11px;
+  text-align: left;
+}
+p {
+  text-align: left !important;
+  margin: 0 !important;
+  color: #777 !important;
+}
+.price-tag {
+  display: inline-table !important;
+    font-size: 13px !important;
+    color: #242424 !important;
+    font-weight: 600 !important;
+    padding: 10px 0 0 !important;
+    text-align: left !important;
+    line-height: 1.54 !important;
+}
+.ant-rate {
+  color: red !important;
+  font-size: 12px;
+  display: block;
+}
+.ant-card {
+  width: 230px;
+}
+@media screen and (max-width: 576px) {
+  .ant-card-cover img {
+    height: 120px !important;
+    width: 80px !important;
+  }
+  .ant-card {
+    width: 160px !important;
+  }
+  .ant-card-meta-title {
+    font-size: 10px !important;
+  }
+  .ant-rate {
+    font-size: 12px !important;
+  }
+}
+.wtrButtonContainer .wtrLeft.wtrUp {
+	border-width: 1px
+}
+.wtrButtonContainer .progressIndicator {
+    display: none;
+}
+.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressTrigger,
+.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressIndicator {
+	overflow-x: hidden
+}
+.wtrButtonContainer .wtrLeft button.wtrToRead {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	display: block;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: auto;
+	text-align: inherit
+}
+.wtrButtonContainer button {
+    min-width: 0 !important;
+}
+.wtrButtonContainer .ratingStars {
+    text-align: center;
+}
+.wtrButtonContainer .wtrRating {
+    clear: both;
+    color: #f2f2f2;
+    font-size: 85%;
+}

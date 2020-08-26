@@ -1,0 +1,168 @@
+.mainContentContainer {
+	background-image: none;
+	background-color: white
+}
+
+.mainContent {
+	width: 1170px;
+	margin-bottom: 16px
+}
+
+.mainContentFloat {
+	margin: 0;
+	width: 100%
+}
+.gcaMasthead__container--current {
+	background-color: #000000
+}
+header.gcaMasthead {
+	background-image: url("/assets/award/2019/background.png");
+	background-size: 2722px 375px;
+	background-position: center -1px;
+	background-repeat: no-repeat;
+	color: #D3A52E;
+	font-size: 16px;
+	min-width: 1170px;
+	height: 375px
+}
+
+.gcaMasthead__content {
+	margin: 0 auto;
+	width: 1106px
+}
+
+.gcaMasthead__logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+	width: 210px;
+	height: 276px;
+	margin: 20px 0
+}
+.gcaMasthead__logo--current {
+	background-image: url("../../image/goodreads-choice-awards-2019.png");
+	height: 351px;
+	width: 349px;
+	margin-bottom: 30px;
+	margin-top: 10px
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+	.gcaMasthead__logo--current {
+		background-image: url("../../image/goodreads-choice-awards-2019.png");
+		background-size: 351px 349px
+	}
+}
+.gcaMasthead__body {
+	float: left;
+	margin-top: 12px;
+	text-align: center;
+	width: 740px
+}
+.gcaMasthead__topbar {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between
+}
+.gcaMasthead__topbarBox {
+	height: 60px
+}
+.gcaMasthead__subheader {
+	color: #D3A52E
+}
+.gcaMasthead__title {
+	color: #FFFF;
+	font-size: 65px;
+	font-weight: bold;
+	margin: 50px auto;
+	width: 720px
+}
+
+.gcaMasthead__title--current {
+	background-size: 750px 66px;
+	width: 750px;
+	height: 66px;
+	margin: 16px 0 16px 4px
+}
+.gcaMasthead__description {
+	line-height: 24px;
+	margin: 0 auto;
+	width: 600px
+}
+
+.gcaMasthead__description--current {
+	float: left;
+	color: #FFFFFF;
+	margin-left: 40px;
+	width: 600px;
+	font-size: 18px
+}
+.gcaButton {
+	-moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	background-color: #BB001E;
+	border-radius: 3px;
+	color: white;
+	font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 16px;
+	margin: 8px auto;
+	padding: 8px 20px;
+	text-align: center;
+	width: 80px
+}
+
+.gcaButton:hover {
+	background-color: #B30F29;
+	background-image: none;
+	color: white;
+	text-decoration: none
+}
+.gcaButton--tall {
+	margin: 32px auto
+}
+
+.gcaButton--masthead {
+	font-size: 18px;
+	width: 150px
+}
+#landingCenter {
+	box-shadow: none;
+	margin: 20px 0;
+	width: 100%
+}
+
+#landingRight {
+	float: right;
+	width: 210px
+}
+
+#landingRight .gcaSidebarItem {
+	border: 0;
+	font-size: 14px;
+	margin: 20px 0
+}
+
+#landingRight .gcaSidebarItem:first-child {
+	border-top: 0;
+	margin-top: 0
+}
+#landingAdContainer {
+	float: right;
+	margin-top: 39px;
+	height: 600px;
+	min-width: 160px
+}

@@ -1,0 +1,32 @@
+.listRowsFull .cell {
+	float: left;
+	text-align: left;
+	padding: 0 9px 10px;
+	width: 300px
+}
+
+.listRowsFull .row {
+	margin-bottom: 5px
+}
+.listImgs {
+	height: 60px;
+	overflow: hidden;
+	margin-bottom: 5px
+}
+
+.listImgs img {
+	width: 52px;
+	height: 80px;
+	margin-right: 2px
+}
+a {
+    color: #00635d;
+    text-decoration: none;
+}
+.listTitle {
+    font-weight: bold;
+}
+.listFullDetails {
+    color: #999;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}

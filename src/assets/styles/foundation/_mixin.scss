@@ -1,0 +1,202 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.wtrButtonContainer {
+		height: 32px;
+		width: 143px
+	}
+	.wtrButtonContainer .wtrLeft,
+	.wtrButtonContainer .wtrRight {
+		font-size: 13px
+	}
+	.wtrButtonContainer .wtrLeft.wtrDown {
+		border-width: 1px 0 1px 1px;
+		height: 16px;
+		padding: 8px 0 8px 10px;
+		width: 106px
+    }
+    .wtrButtonContainer .wtrRight .wtrShelfButton {
+        height: 32px
+    }
+     .wtrButtonContainer .wtrRight.wtrDown{
+        background-color: #f2f2f2;
+        border: solid #dddddd;
+        border-width: 1px 1px 1px 0
+    }
+    .wtrButtonContainer .wtrRight.wtrDown{
+        width: 28px;
+	}
+	.wtrButtonContainer .wtrLeft.wtrUp {
+		width: 100px
+	}	
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead {
+		width: 100px
+	}
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressTrigger,
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressIndicator {
+		width: 92px
+	}
+	// .wtrButtonContainer .wtrLeft button.wtrToRead {
+	// 	color: #fff;
+	// 	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk0ZDVhZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzOWY2MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+	// 	background-size: 100%;
+	// 	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94d5ae), color-stop(100%, #339f63));
+	// 	background-image: linear-gradient(#94d5ae, #339f63);
+	// 	color: #fff;
+	// 	font-size: 13px;
+	// 	height: 32px;
+	// 	padding: 8px 0 8px 8px
+	// }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.wtrButtonContainer {
+		height: 40px;
+		width: 165px
+	}
+	.wtrButtonContainer .wtrLeft,
+	.wtrButtonContainer .wtrRight {
+		font-size: 16px
+	}
+	.wtrButtonContainer .wtrLeft.wtrDown {
+		border-width: 1px 0 1px 1px;
+		// height: 16px;
+		padding: 12px 0 12px 10px;
+		width: 123px
+    }
+    .wtrButtonContainer .wtrRight .wtrShelfButton {
+        height: 40px;
+        padding: 10px
+    }
+    .wtrButtonContainer .wtrRight.wtrDown{
+        background-color: #f2f2f2;
+        border: solid #dddddd;
+        border-width: 1px 1px 1px 0
+    }
+    .wtrButtonContainer .wtrRight.wtrDown{
+        width: 30px;
+	}
+	 .wtrButtonContainer .wtrLeft.wtrUp {
+		width: 120px
+	}
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead {
+		width: 120px
+	}
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressTrigger,
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressIndicator {
+		width: 110px
+	}
+    .wtrButtonContainer .wtrUp{
+		color: #fff;
+		background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk0ZDVhZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzOWY2MyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==");
+		background-size: 100%;
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94d5ae), color-stop(100%, #339f63));
+		background-image: linear-gradient(#94d5ae, #339f63);
+		color: #fff
+	}
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.wtrButtonContainer {
+		height: 67px;
+		width: 140px
+	}
+	.wtrButtonContainer .wtrLeft,
+	.wtrButtonContainer .wtrRight {
+		font-size: 13px
+	}
+	.wtrButtonContainer .wtrLeft.wtrDown {
+		border-width: 1px;
+		padding: 6px 0 7px 8px;
+		width: 105px
+	}
+	.wtrButtonContainer .wtrPrompt {
+		bottom: 74px
+    }
+    .wtrButtonContainer .wtrRight .wtrShelfButton {
+        height: 28px;
+        padding: 5px
+    }
+    .wtrButtonContainer .wtrRight.wtrDown {
+        color: #fff;
+        background-color: #409D69;
+        color: #fff;
+        border-width: 0px;
+        width: 27px
+    }
+    .wtrButtonContainer .wtrRight.wtrDown:hover {
+        background-color: #3d9363
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.wtrButtonContainer {
+		height: 67px;
+		width: 140px
+	}
+	.wtrButtonContainer .wtrLeft,
+	.wtrButtonContainer .wtrRight {
+		font-size: 13px
+	}
+	.wtrButtonContainer .wtrLeft.wtrDown {
+		border-width: 1px;
+		padding: 6px 0 7px 8px;
+		width: 105px
+	}
+	.wtrButtonContainer .wtrPrompt {
+		bottom: 74px
+	}
+	.wtrButtonContainer .ratingThanks {
+		left: -30px
+	}
+	.wtrButtonContainer .wtrPromptToReview {
+		left: -17.5px;
+    }
+    .wtrButtonContainer .wtrRight .wtrShelfButton {
+        height: 28px;
+        padding: 5px
+    }
+    .wtrButtonContainer .wtrRight.wtrDown {
+        color: #fff;
+        background-color: #409D69;
+        color: #fff;
+        border-width: 0px;
+        width: 27px
+    }
+    .wtrButtonContainer .wtrRight.wtrDown:hover {
+        background-color: #3d9363
+    }
+    .siteHeaderBottomSpacer {
+		padding-bottom: 50px
+	}
+	.wtrButtonContainer .wtrUp {
+		color: #fff;
+		background-color: #409D69;
+		color: #fff
+	}
+	.wtrButtonContainer .wtrLeft.wtrUp {
+		border-width: 0px;
+		width: 110px
+	}
+		.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead {
+		width: 110px
+	}
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressTrigger,
+	.wtrButtonContainer .wtrLeft.wtrUp button.wtrToRead>.progressIndicator {
+		width: 105px
+	}
+	.wtrButtonContainer .wtrLeft button.wtrToRead {
+		color: #fff;
+		background-color: #409D69;
+		color: #fff;
+		font-size: inherit;
+		-webkit-font-smoothing: antialiased;
+		height: 28px;
+		padding: 6px 0 6px 8px
+	}
+
+}
