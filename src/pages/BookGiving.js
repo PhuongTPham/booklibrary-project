@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Form, Rating, Button, Dropdown } from "semantic-ui-react";
 import { GENRE } from "../constant/index";
-import * as BookAPI from "../utils/apiURLs";
 import swal from "sweetalert";
+import axios from "axios";
+import CheckBookGiving from "../components/CheckBookGiving";
 
 function BookGiving() {
+  const url = "http://localhost:4000/givingbook"
   const initGift = {
     idUser: Math.random().toString(36).substring(8),
     name: "",
@@ -19,6 +21,8 @@ function BookGiving() {
     status: "Processing",
   };
   const [gift, setGiftBook] = useState(initGift);
+  const [showResults, setShowResults] = React.useState(false)
+
   const handleRate = (e, { rating }) => {
     setGiftBook({ ...gift, rating });
   };
@@ -37,7 +41,10 @@ function BookGiving() {
     if (!gift.title.length) {
       return swal("Title not blank");
     }
-    BookAPI.addGivingBook(gift);
+    axios.post(url, gift)
+      .then(response => response.data)
+    setShowResults(true)
+   
   };
   
   return (
@@ -48,7 +55,8 @@ function BookGiving() {
       <div className="mainContent">
         <div className="mainContentFloat">
           <div id="flashContainer"></div>
-          <div>
+           { showResults ? <CheckBookGiving /> : 
+          <div className="leftContainer">
             <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
               GIVING BOOK
             </h2>
@@ -86,7 +94,7 @@ function BookGiving() {
               <Form.Field required>
                 <label>Image</label>
                 <input
-                  type="text"
+                  type="url"
                   name="coverImageSrc"
                   value={gift.coverImageSrc}
                   onChange={handleChange}
@@ -155,6 +163,7 @@ function BookGiving() {
               </Button>
             </Form>
           </div>
+          }
         </div>
       </div>
     </div>

@@ -32,7 +32,9 @@ export const getAllBestSeller = listBest => {
 export const addGivingBook = gift => {
     axios.post("http://localhost:4000/givingbook", gift).then(response => response.data)
 }
-
+export const getGivingBook = gift => {
+  axios.get("http://localhost:4000/givingbook").then(response => response.data)
+}
 export const addComment = comment => {
   axios.post("http://localhost:4000/comments", comment).then(response => response.data)
 }

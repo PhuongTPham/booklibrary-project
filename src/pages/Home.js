@@ -27,7 +27,7 @@ function Home() {
                 <div className="gcaMasthead__ctaButtonContainer gcaMasthead__ctaButtonContainer--current">
                   <a
                     className="gcaButton gcaButton--masthead gcaButton--tall"
-                    href="http://localhost:3000/home"
+                    href="http://localhost:3000/"
                   >
                     View books
                   </a>
