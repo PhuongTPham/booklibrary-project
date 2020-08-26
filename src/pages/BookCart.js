@@ -10,7 +10,7 @@ function BookCart() {
   let history = useHistory();
 
   const handleClick = () => {
-    history.push("/")
+    history.push("/booklibrary-project")
   }
   if (carts.length === 0) {
     return (

@@ -8,7 +8,6 @@ import BookDetail from "./pages/BookDetail";
 import NoPage from "./pages/NoPage";
 import BookCart from "./pages/BookCart";
 import BookGiving from "./pages/BookGiving";
-import BorrowBook from "./pages/BorrowBook";
 import { Layout } from "antd";
 import Header from "./layout/Header";
 // component
@@ -24,7 +23,7 @@ function App() {
         <Header />
         <BookProvider>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/booklibrary-project" component={Home} />
             <Route path="/book-cart" component={BookCart} />
             <Route path="/book/details/:id" component={BookDetail} />
             <Route path="/author/:authorId" component={BookAuthor} />

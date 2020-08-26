@@ -10,7 +10,7 @@ import "./assets/styles/index.scss";
 import "react-datepicker/dist/react-datepicker.css";
 
 ReactDOM.render(
-  <Router>
+  <Router basename={"/booklibrary-project"}>
     <App />
   </Router>,
   document.getElementById('root')

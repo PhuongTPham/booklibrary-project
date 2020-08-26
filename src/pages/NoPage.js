@@ -5,7 +5,7 @@ export default function NotFoundPage() {
     let history = useHistory();
 
   const handleClick = () => {
-    history.push("/")
+    history.push("/booklibrary-project")
   }
   return (
     <div className="mainContentContainer" style={{paddingTop: "100px"}}>
