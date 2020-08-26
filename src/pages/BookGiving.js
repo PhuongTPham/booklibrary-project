@@ -55,7 +55,6 @@ function BookGiving() {
       <div className="mainContent">
         <div className="mainContentFloat">
           <div id="flashContainer"></div>
-           { showResults ? <CheckBookGiving /> : 
           <div className="leftContainer">
             <h2 style={{ textAlign: "center", fontWeight: "bold" }}>
               GIVING BOOK
@@ -163,7 +162,7 @@ function BookGiving() {
               </Button>
             </Form>
           </div>
-          }
+          <CheckBookGiving />
         </div>
       </div>
     </div>
