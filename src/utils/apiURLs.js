@@ -4,16 +4,12 @@ export const getAll = () => {
   axios.get("http://localhost:4000/books")
     .then(response => response.data)
 }
-export const getbyStatus = () => {
-  axios.get('http://localhost:4000/books?status=Not%20borrowing')
-    .then(response => response.data)
-}
 export const getAllComment = () => {
   axios.get('http://localhost:4000/comments').then(response => response.data)
 }
 export const getById = bookId => {
   axios.get(`http://localhost:4000/books/${bookId}`)
-  .then(response => response.data[0])
+    .then(response => response.data[0])
 }
 
 export const searchBook = queryBook => {
@@ -25,15 +21,18 @@ export const rentBook = data => {
 }
 
 export const getAllBestSeller = listBest => {
-    axios.get("http://localhost:4000/bestseller")
+  axios.get("http://localhost:4000/bestseller")
     .then(response => response.data)
 }
 
 export const addGivingBook = gift => {
-    axios.post("http://localhost:4000/givingbook", gift).then(response => response.data)
+  axios.post("http://localhost:4000/givingbook", gift).then(response => { return response.data })
 }
 export const getGivingBook = gift => {
-  axios.get("http://localhost:4000/givingbook").then(response => response.data)
+  return axios.get("http://localhost:4000/givingbook")
+    .then(response => {
+    return response.data
+  })
 }
 export const addComment = comment => {
   axios.post("http://localhost:4000/comments", comment).then(response => response.data)

@@ -1,26 +1,28 @@
-import React, { useEffect, useState } from "react";
-import Axios from "axios";
+import React, { useEffect, useState, useCallback } from "react";
 import ItemBookGiving from "./ItemBookGiving";
-
+import * as BookAPI from "../utils/apiURLs";
+import book from "../data.json"
 const CheckBookGiving = () => {
-    const [giftBook, setGift] = useState({});
-    useEffect(() => {
-        Axios.get("http://localhost:4000/givingbook").then((response) =>
-            setGift(response.data)
-        );
-    }, []);
-    return (
-        <div className="rightContainer">
-            <h3>Thanks you</h3>
-            <h3>Cac cuon sach dang duoc kiem tra</h3>
-            {giftBook.length === null ?
-                giftBook.map((book) => {
-                    return <ItemBookGiving key={book.id} book={book} />
-                })
-                : null
-            }
-        </div>
-    );
+  const [giftBook, setGift] = useState({});
+  const fetchMyAPI = useCallback(async () => {
+    let response = await BookAPI.getGivingBook()
+    setGift(response);
+  }, []);
+
+  useEffect(() => {
+    fetchMyAPI();
+  }, [fetchMyAPI]);
+  return (
+    <div className="rightContainer" style={{width: "500px"}}>
+      <h2 style={{textAlign: "center"}}>Thanks you</h2>
+      <h3 style={{textAlign: "center"}}>All the book is given </h3>
+      {book.givingbook.length !== 0
+        ? book.givingbook.map((book) => {
+            return <ItemBookGiving key={book.id} book={book} />;
+          })
+        : null}
+    </div>
+  );
 };
 
 export default CheckBookGiving;

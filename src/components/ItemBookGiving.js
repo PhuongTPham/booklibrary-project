@@ -1,13 +1,17 @@
 import React from 'react'
-import { Rate } from "antd";
+import { Rate, Badge } from "antd";
 
 const ItemBookGiving = ({book}) => {
-  console.log(book)
+   const BookStatus = (status) => {
+    if (status === "Processing") {
+      return <Badge status="success" text={status} />;
+    } 
+  };
     return (
-        <div className="category clearFix">
-        <div className="category__winnerImageContainer">
+        <div className="categories clearFix">
+        <div className="category__ImageContainer">
           <img
-            className="category__winnerImage"
+            className="category__Image"
             alt={book.title}
             src={book.coverImageSrc}
           />
@@ -18,8 +22,12 @@ const ItemBookGiving = ({book}) => {
             <div className="starsErrorTooltip hidden">
               Error rating book. Refresh and try again.
             </div>
+            <div className= "h2Container gradientHeaderContainer">
+              <h2 className="brownBackground">{book.title}</h2>
+            </div>
             <div className="myRating uitext greyText">Rate this book</div>
             <Rate disabled allowHalf defaultValue={book.rating} />
+            {BookStatus(book.status)}
           </div>
         </div>
       </div>

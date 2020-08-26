@@ -6,24 +6,23 @@
  .ui.form{
      width: 90% !important;
  }
- .leftContainerGiving {
+
+.category__ImageContainer {
+	width: 160px;
+	height: 210px;
+	margin: 0 auto
+}
+
+.category__Image {
+	width: 100%;
+	max-height: 100%
+}
+
+.categories {
     float: left;
-    width: 900px !important;
-    padding-right: 10px;
-    padding-left: 8px;
-}
-.leftContainerGiving{
-	padding-left: 8px
-}
-.leftContainerGiving {
-	word-wrap: break-word;
-}
-.rightContainerGiving {
-	margin-left: 8px
-}
-.rightContainerGiving {
-	float: left;
-	width: 300px;
-	display: inline;
-	margin-left: 8px
+    width: 190px;
+    margin: 0px 3px 6px 3px;
+    background-color: #F9F7F0;
+    color: #181818;
+    text-align: center
 }
