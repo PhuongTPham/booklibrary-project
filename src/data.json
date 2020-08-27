@@ -1071,8 +1071,8 @@
       "id": "C001",
       "body": "The Alchemist is a fantastic book and the storytelling is beautiful. The choice of words are impeccable, full of wisdom and philosophy",
       "bookId": "9780061122415",
-       "idUser": "uceb",
-       "rating": "4.2"
+      "idUser": "uceb",
+      "rating": "4.2"
     },
     {
       "id": "C002",
@@ -1084,8 +1084,8 @@
       "id": "C003",
       "body": "Where did the saying come from: When you want something the whole universe will conspire together to help you get it?",
       "bookId": "9780061122415",
-       "idUser": "uceeeeeb",
-       "rating": "4.2"
+      "idUser": "uceeeeeb",
+      "rating": "4.2"
     },
     {
       "id": "120425",
@@ -1100,6 +1100,20 @@
       "idUser": "q6",
       "id": "NiVOkFX",
       "rating": "4.2"
+    },
+    {
+      "body": "Book is good",
+      "bookId": "120425",
+      "idUser": "zro",
+      "rating": "4.2",
+      "id": "24R2Gpz"
+    },
+    {
+      "body": "is good",
+      "bookId": "120425",
+      "idUser": "x7f",
+      "rating": "4.2",
+      "id": "81OCvTV"
     }
   ],
   "carts": [

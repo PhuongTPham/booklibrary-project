@@ -39,6 +39,7 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
+            {/* vis du tai su dung component Search  */}
             <div className="searchBox searchBox--navbar">
               <Search />
             </div>

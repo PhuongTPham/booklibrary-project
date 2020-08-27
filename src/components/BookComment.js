@@ -15,13 +15,16 @@ const BookComment = ({book}) => {
         setComment({ ...comment, [name]: value });
     }
     const handleSubmit = e => {
-        e.preventDefault();
+        // e.preventDefault();
         BookAPI.addComment({
             body: comment.body,
             bookId: book.id,
             idUser: Math.random().toString(36).substring(10),
             rating: "4.2"
         }).then(res => console.log(res))
+    }
+    const handleCancel = () => {
+        setComment({body: " "})
     }
     return (
         <div className="readerQAFormContainer js-readerQAForm">
@@ -49,7 +52,7 @@ const BookComment = ({book}) => {
                         <button className="primaryAction submitAction gr-form__submitButton" type="submit" onClick={handleSubmit}>
                             Comment
                         </button>
-                        <div className="secondaryAction cancelAction gr-form__secondaryAction">
+                        <div className="secondaryAction cancelAction gr-form__secondaryAction" onClick={handleCancel}>
                             Cancel
                             </div>
                     </div>

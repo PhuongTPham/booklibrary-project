@@ -8,7 +8,7 @@ const initialState = {
   searchedBooks: [],
   carts: []
 };
-
+// khoi tao ContextProvider
 export const BookContext = createContext(initialState);
 
 export const BookProvider = ({ children }) => {

@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { BookContext } from "../context/context";
 import BookItem from "../components/BookItem";
 import Axios from "axios";
-import { Pagination } from "antd";
 
 export default function List() {
   const { books, searchedBooks } = useContext(BookContext);

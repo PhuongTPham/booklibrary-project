@@ -70,7 +70,7 @@ function Home() {
                 </div>
                 <div className="gcaSidebarItem" id="previousYears">
                   <h3 className="gr-h3">Categories</h3>
-                  <ul className="noListStyle">
+                  <ul className="noListStyle" style={{fontSize: "15px"}}>
                     <li>
                       <a
                         className="previousYears__link"
@@ -79,7 +79,7 @@ function Home() {
                        Fiction
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2017"
@@ -87,7 +87,7 @@ function Home() {
                         Romance
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2016"
@@ -95,7 +95,7 @@ function Home() {
                         Young
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2015"
@@ -103,7 +103,7 @@ function Home() {
                         Fantasy
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2014"
@@ -111,7 +111,7 @@ function Home() {
                         Science Fiction
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2013"
@@ -119,7 +119,7 @@ function Home() {
                        Humor
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2012"
@@ -127,7 +127,7 @@ function Home() {
                        Nonfiction
                       </a>
                     </li>
-                    <li>
+                    <li style={{marginTop: "5px"}}>
                       <a
                         className="previousYears__link"
                         href="/choiceawards/best-books-2011"
