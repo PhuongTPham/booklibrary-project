@@ -20,7 +20,7 @@ const Header = () => {
             <nav className="siteHeader__primaryNavInline">
               <ul role="menu" className="siteHeader__menuList">
                 <li className="siteHeader__topLevelItem siteHeader__topLevelItem--home">
-                  <Link to="/booklibrary-project" className="siteHeader__topLevelLink">
+                  <Link to="/" className="siteHeader__topLevelLink">
                     Home
                   </Link>
                 </li>

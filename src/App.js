@@ -18,22 +18,20 @@ import Home from "./pages/Home";
 import Footer from "./layout/Footer";
 function App() {
   return (
+    <BookProvider>
     <Layout>
-      <Router>
         <Header />
-        <BookProvider>
           <Switch>
-            <Route exact path="/booklibrary-project" component={Home} />
+            <Route exact path="/" component={Home}/>
             <Route path="/book-cart" component={BookCart} />
             <Route path="/book/details/:id" component={BookDetail} />
             <Route path="/author/:authorId" component={BookAuthor} />
             <Route path="/book/giving-book" component={BookGiving} />
             <Route path="/*" component={NoPage} />
           </Switch>
-        </BookProvider>
         <Footer />
-      </Router>
     </Layout>
+    </BookProvider>
   );
 }
 
