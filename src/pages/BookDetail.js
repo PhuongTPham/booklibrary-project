@@ -3,9 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { BookContext } from "../context/context";
 import { Button } from "semantic-ui-react";
-import { Rate } from "antd";
 
-// import NavBar from "../layout/NavBar";
 import { urlDownload, urlReadExcerpt } from "../constant/index";
 import BookComment from "../components/BookComment";
 import BestBookEver from "../components/BestBookEver";
@@ -73,7 +71,7 @@ export default function BookDetail() {
                 </div>
                 <div className="wtrButtonContainer">
                   <div className="wtrDown wtrLeft wtrStatusToRead">
-                    <Button onClick={handleAddCart} disabled={disableBtn}>Want to borrow</Button>
+                    <Button onClick={handleAddCart} disabled={disableBtn}s style={{marginLeft: "5px", padding: "0px"}}>Want to borrow</Button>
                     <div className="wtrPrompt wtrPromptToReview">
                       <a href="/review/edit/11870085">Write a review</a>
                     </div>
@@ -240,19 +238,7 @@ export default function BookDetail() {
                           </a>
                         </td>
                       </tr>
-                      <tr>
-                        <td className="myActivity__label" valign="top">
-                          Review
-                        </td>
-                        <td colSpan="2">
-                          <a
-                            className="gr-button u-marginTopXSmall u-marginBottomSmall"
-                            href="/review/edit/11870085?report_event=true&amp;survey=1"
-                          >
-                            Write a review
-                          </a>
-                        </td>
-                      </tr>
+                      
                       <tr />
                       <tr />
                       <tr />

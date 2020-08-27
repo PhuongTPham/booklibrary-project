@@ -6,10 +6,11 @@ const BookCartItem = (cart) => {
   const { books, removeCart } = useContext(BookContext);
   const book = books.filter((book) => book.id === cart.cart.idBook);
   const { title, coverImageSrc, pricerent } = book[0];
-  
   const handleRemoveCart = () => {
     removeCart(cart.cart.idBook);
   };
+  const [showResults, setShowResults] = React.useState(false)
+
   return (
     <div className="category clearFix">
       <div className="category__ImageContainer">

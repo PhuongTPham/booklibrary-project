@@ -10,7 +10,7 @@ const ListComment = () => {
 
   useEffect(() => {
     getComments();
-  }, [comments]);
+  }, []);
   return (
     <div className="bigBoxBody">
       <div className="bigBoxContent containerWithHeaderContent">
@@ -19,9 +19,9 @@ const ListComment = () => {
             <span className="smallText">Showing1-10</span>
           </div>
           <div
-            id="reviewControls"
-            className="reviewControls u-defaultType clearFix"
-          ></div>
+    id="reviewControls"
+    className="reviewControls u-defaultType clearFix"
+    />
           {comments.length !== 0
             ? comments.map((comment) => {
                 return (
@@ -35,9 +35,9 @@ const ListComment = () => {
                           itemType="http://schema.org/Review"
                         >
                           <link
-                            itemProp="url"
-                            href="https://www.goodreads.com/review/show/468815437"
-                          ></link>
+    itemProp="url"
+    href="https://www.goodreads.com/review/show/468815437"
+    />
                           <a
                             title="Richa"
                             className="left imgcol"

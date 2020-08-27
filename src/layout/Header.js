@@ -16,7 +16,7 @@ const Header = () => {
                 type="button"
               ></button>
             </div>
-            <a href="/booklibrary-project" className="siteHeader__logo" title="Libraries Home" />
+            <a href="/" className="siteHeader__logo" title="Libraries Home" />
             <nav className="siteHeader__primaryNavInline">
               <ul role="menu" className="siteHeader__menuList">
                 <li className="siteHeader__topLevelItem siteHeader__topLevelItem--home">

@@ -7,10 +7,10 @@ import 'antd/dist/antd.css';
 import 'semantic-ui-css/semantic.min.css';
 import * as serviceWorker from './serviceWorker';
 import "./assets/styles/index.scss";
-import "react-datepicker/dist/react-datepicker.css";
+
 
 ReactDOM.render(
-  <Router basename={"/booklibrary-project"}>
+  <Router>
     <App />
   </Router>,
   document.getElementById('root')

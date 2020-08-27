@@ -9,7 +9,7 @@ const CheckBookGiving = () => {
 
   useEffect(() => {
     getGiftBooks();
-  }, [giftBook]);
+  }, []);
   return (
     <div className="rightContainer" style={{width: "500px"}}>
       <h2 style={{textAlign: "center"}}>Thanks you</h2>

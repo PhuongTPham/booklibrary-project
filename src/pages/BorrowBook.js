@@ -1,14 +1,12 @@
-import React, { useState,useContext, useEffect } from "react";
+import React, { useState, useContext} from "react";
 
 import { Form, Button } from "semantic-ui-react";
 import * as BookAPI from "../utils/apiURLs"
 import { BookContext } from "../context/context";
 import swal from "sweetalert";
-import book from "../data.json";
 function BorrowBook() {
-    const { books, carts } = useContext(BookContext);
-    const [status, setStatusBook] = useState("");
-    const getSubtotal = (data, carts) => {
+  const { books, carts, removeCart } = useContext(BookContext);
+  const getSubtotal = (data, carts) => {
     let subtotal = 0;
     carts.forEach((cart) => {
       data.forEach((book) => {
@@ -19,21 +17,34 @@ function BorrowBook() {
     });
 
     return subtotal.toFixed(2);
-   
+
   };
   let totalprice = getSubtotal(books, carts);
-
   const idBooks = carts.map(cart => cart.idBook)
-   const getQuantity = (carts) => {
+  const getQuantity = (carts) => {
     let total = 0;
-     carts.forEach((cart) => {
-       if(cart.quantity !== null) {
-         total += cart.quantity
-       }
-     })
-     return total;
+    carts.forEach((cart) => {
+      if (cart.quantity !== null) {
+        total += cart.quantity
+      }
+    })
+    return total;
   }
   let quanityValue = getQuantity(carts)
+
+
+  const checkBook = (carts, books) => {
+    let statusBookById;
+    carts.forEach((cart) => {
+      books.forEach((book) => {
+        if (book.id === cart.idBook) {
+          statusBookById = book
+        }
+      });
+    });
+    return statusBookById
+  }
+  let bookByIdCart = checkBook(carts, books)
   const initRent = {
     idUser: Math.random().toString(36).substring(8),
     name: "",
@@ -45,19 +56,22 @@ function BorrowBook() {
     startDate: "",
     dueDate: "",
   }
-  const bookOther = book.itemrent.map(item => item.idBooks)
+ 
   const [rentbook, setRentBook] = useState(initRent);
   const handleChange = e => {
     const { name, value } = e.target
     setRentBook({ ...rentbook, [name]: value })
   }
- const minDate = new Date().toJSON().slice(0,10)
-  
+  const minDate = new Date().toJSON().slice(0, 10)
   const handleSubmit = e => {
     e.preventDefault();
     if (rentbook.idBook !== null || rentbook.name !== null || rentbook.position !== null || rentbook.quantity !== null || rentbook.startDate !== null
-        || rentbook.dueDate !== null) {
-      BookAPI.rentBook(rentbook)
+      || rentbook.dueDate !== null) {
+      BookAPI.rentBook(rentbook).then(res => {
+        idBooks.forEach((id) => {
+          removeCart(id)
+        })
+      })
     }
     swal({
       title: "You have borrowed successfully!",
@@ -65,16 +79,36 @@ function BorrowBook() {
       icon: "success",
       button: "Thanks you",
     });
+    BookAPI.updateStatusBook(idBooks[0], {
+      id: bookByIdCart.id,
+      title: bookByIdCart.title,
+      coverImageSrc: bookByIdCart.coverImageSrc,
+      rating: bookByIdCart.rating,
+      genre: bookByIdCart.genre,
+      price: bookByIdCart.price,
+      pricerent: bookByIdCart.pricerent,
+      authorName: bookByIdCart.authorName,
+      description: bookByIdCart.description,
+      authorId: bookByIdCart.authorId,
+      numberOfPages: bookByIdCart.numberOfPages,
+      status: "borrowing"
+    }).then(res => res)
+    BookAPI.updateStatusBook(idBooks[1], {
+      id: bookByIdCart.id,
+      title: bookByIdCart.title,
+      coverImageSrc: bookByIdCart.coverImageSrc,
+      rating: bookByIdCart.rating,
+      genre: bookByIdCart.genre,
+      price: bookByIdCart.price,
+      pricerent: bookByIdCart.pricerent,
+      authorName: bookByIdCart.authorName,
+      description: bookByIdCart.description,
+      authorId: bookByIdCart.authorId,
+      numberOfPages: bookByIdCart.numberOfPages,
+      status: "borrowing"
+    }).then(res => res)
   }
-  useEffect(() => {
-    for(let i = 1 ; i<= bookOther.length; i++){
-      books.forEach(bookStatus => {
-        if( i === bookStatus.id){
-          setStatusBook("borrowing")
-        }
-      })
-    }
-  }, [])
+
   return (
     <div className="borrow-book">
       <Form size="large" onSubmit={handleSubmit}>
@@ -123,8 +157,8 @@ function BorrowBook() {
             name="dueDate"
             value={rentbook.dueDate}
             onChange={handleChange} />
-        </Form.Field> 
-        <Button type="submit" size="large">
+        </Form.Field>
+        <Button type="submit" size="large" color="blue">
           Submit
         </Button>
       </Form>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import { BookContext } from "../context/context";
 import { Button } from "antd";
 import {  useHistory } from "react-router-dom";
@@ -6,12 +6,13 @@ import BookCartItem from "../components/BookCartItem";
 import BorrowBook from "./BorrowBook";
 
 function BookCart() {
-  const { carts } = useContext(BookContext);
+  const {  carts } = useContext(BookContext);
   let history = useHistory();
 
   const handleClick = () => {
-    history.push("/booklibrary-project")
+    history.push("/")
   }
+
   if (carts.length === 0) {
     return (
       <div

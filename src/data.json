@@ -14,13 +14,12 @@
         "science-fiction"
       ],
       "price": "$18.58",
-      "description": "Could you survive on your own, in the wild, with everyone out to make sure you don't live to see the morning?",
-      "authorName": "Suzanne Collins",
-      "authorId": "153394.Suzanne_Collins",
-      "quantity": 100,
       "pricerent": "0.5",
-      "status": "Not borrowing",
-      "numberOfPages": "374 pages"
+      "authorName": "Suzanne Collins",
+      "description": "Could you survive on your own, in the wild, with everyone out to make sure you don't live to see the morning?",
+      "authorId": "153394.Suzanne_Collins",
+      "numberOfPages": "374 pages",
+      "status": "Not borrowing"
     },
     {
       "id": "120425",
@@ -33,12 +32,11 @@
         "fiction"
       ],
       "price": "$19.34",
-      "description": "There is a door at the end of a silent corridor. And it’s haunting Harry Pottter’s dreams. Why else would he be waking in the middle of the night, screaming in terror?",
+      "pricerent": "0.5",
       "authorName": "J.K. Rowling",
+      "description": "There is a door at the end of a silent corridor. And it’s haunting Harry Pottter’s dreams. Why else would he be waking in the middle of the night, screaming in terror?",
       "authorId": "1077326.J_K_Rowling",
-      "quantity": 100,
-      "status": "Not borrowing",
-      "pricerent": "0.5"
+      "status": "Not borrowing"
     },
     {
       "id": "265741",
@@ -87,7 +85,6 @@
       "pricerent": "0.5"
     },
     {
-      "id": "418651",
       "title": "Twilight",
       "coverImageSrc": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361039443l/41865.jpg",
       "rating": "3.59",
@@ -107,7 +104,8 @@
       "authorId": "941441.Stephenie_Meyer",
       "quantity": 100,
       "status": "Not borrowing",
-      "pricerent": "0.5"
+      "pricerent": "0.5",
+      "id": "418651"
     },
     {
       "id": "19063",
@@ -1093,34 +1091,6 @@
       "bookId": "120425",
       "idUser": "ucwwweb",
       "rating": "4.2"
-    },
-    {
-      "body": "sssss",
-      "bookId": "2767052",
-      "idUser": "q6",
-      "id": "NiVOkFX",
-      "rating": "4.2"
-    },
-    {
-      "body": "Book is good",
-      "bookId": "120425",
-      "idUser": "zro",
-      "rating": "4.2",
-      "id": "24R2Gpz"
-    },
-    {
-      "body": "is good",
-      "bookId": "120425",
-      "idUser": "x7f",
-      "rating": "4.2",
-      "id": "81OCvTV"
-    }
-  ],
-  "carts": [
-    {
-      "id": "C1",
-      "quantity": 10,
-      "idBook": "1349652"
     }
   ],
   "itemrent": [
@@ -1129,27 +1099,27 @@
       "name": "fffffff",
       "position": "intern",
       "idBooks": [
-        "2767052"
+        "27672"
       ],
       "totalPrice": "1.00",
-      "quantity": 2,
+      "quantity": 1,
       "startDate": "2020-08-12",
       "dueDate": "2020-08-26",
       "id": "DK8lNyJ"
     },
     {
-      "idUser": "uceb",
-      "name": "Phuong",
-      "position": "intern",
-      "address": "Phuong",
+      "idUser": "8t86s",
+      "name": "đ",
+      "position": "đ",
+      "address": "ddd",
       "idBooks": [
         "120425"
       ],
       "totalPrice": "0.50",
       "quantity": 1,
-      "startDate": "2020-08-28",
-      "dueDate": "2020-09-05",
-      "id": "hCRimM9"
+      "startDate": "2020-08-21",
+      "dueDate": "2020-08-29",
+      "id": "5_XsnFj"
     }
   ],
   "givingbook": [
