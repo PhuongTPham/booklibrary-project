@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e812073.chunk.css",
-    "main.js": "/static/js/main.c9ddb48a.chunk.js",
-    "main.js.map": "/static/js/main.c9ddb48a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b8fe87b6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b8fe87b6.js.map",
-    "static/css/2.a887fbbe.chunk.css": "/static/css/2.a887fbbe.chunk.css",
-    "static/js/2.36b1ecc3.chunk.js": "/static/js/2.36b1ecc3.chunk.js",
-    "static/js/2.36b1ecc3.chunk.js.map": "/static/js/2.36b1ecc3.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.c2118979d28c319f45ab98a25d1df185.js": "/precache-manifest.c2118979d28c319f45ab98a25d1df185.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.a887fbbe.chunk.css.map": "/static/css/2.a887fbbe.chunk.css.map",
-    "static/css/main.9e812073.chunk.css.map": "/static/css/main.9e812073.chunk.css.map",
-    "static/js/2.36b1ecc3.chunk.js.LICENSE.txt": "/static/js/2.36b1ecc3.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/static/media/shopping-cart.e39b585b.svg",
-    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/booklibrary-project/static/css/main.a467465f.chunk.css",
+    "main.js": "/booklibrary-project/static/js/main.ebc18515.chunk.js",
+    "main.js.map": "/booklibrary-project/static/js/main.ebc18515.chunk.js.map",
+    "runtime-main.js": "/booklibrary-project/static/js/runtime-main.692cc8af.js",
+    "runtime-main.js.map": "/booklibrary-project/static/js/runtime-main.692cc8af.js.map",
+    "static/css/2.c83e3fd9.chunk.css": "/booklibrary-project/static/css/2.c83e3fd9.chunk.css",
+    "static/js/2.36b1ecc3.chunk.js": "/booklibrary-project/static/js/2.36b1ecc3.chunk.js",
+    "static/js/2.36b1ecc3.chunk.js.map": "/booklibrary-project/static/js/2.36b1ecc3.chunk.js.map",
+    "index.html": "/booklibrary-project/index.html",
+    "precache-manifest.2a9d7922351e9b3894ce871e4b27fd43.js": "/booklibrary-project/precache-manifest.2a9d7922351e9b3894ce871e4b27fd43.js",
+    "service-worker.js": "/booklibrary-project/service-worker.js",
+    "static/css/2.c83e3fd9.chunk.css.map": "/booklibrary-project/static/css/2.c83e3fd9.chunk.css.map",
+    "static/css/main.a467465f.chunk.css.map": "/booklibrary-project/static/css/main.a467465f.chunk.css.map",
+    "static/js/2.36b1ecc3.chunk.js.LICENSE.txt": "/booklibrary-project/static/js/2.36b1ecc3.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/booklibrary-project/static/media/shopping-cart.e39b585b.svg",
+    "static/media/semantic.min.css": "/booklibrary-project/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8fe87b6.js",
-    "static/css/2.a887fbbe.chunk.css",
+    "static/js/runtime-main.692cc8af.js",
+    "static/css/2.c83e3fd9.chunk.css",
     "static/js/2.36b1ecc3.chunk.js",
-    "static/css/main.9e812073.chunk.css",
-    "static/js/main.c9ddb48a.chunk.js"
+    "static/css/main.a467465f.chunk.css",
+    "static/js/main.ebc18515.chunk.js"
   ]
 }
