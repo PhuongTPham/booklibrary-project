@@ -1,7 +1,7 @@
-import React, { useState, useContext} from "react";
+import React, { useState, useContext } from "react";
 
 import { Form, Button } from "semantic-ui-react";
-import * as BookAPI from "../utils/apiURLs"
+import * as BookAPI from "../utils/apiURLs";
 import { BookContext } from "../context/context";
 import swal from "sweetalert";
 function BorrowBook() {
@@ -17,34 +17,32 @@ function BorrowBook() {
     });
 
     return subtotal.toFixed(2);
-
   };
   let totalprice = getSubtotal(books, carts);
-  const idBooks = carts.map(cart => cart.idBook)
+  const idBooks = carts.map((cart) => cart.idBook);
   const getQuantity = (carts) => {
     let total = 0;
     carts.forEach((cart) => {
       if (cart.quantity !== null) {
-        total += cart.quantity
+        total += cart.quantity;
       }
-    })
+    });
     return total;
-  }
-  let quanityValue = getQuantity(carts)
-
+  };
+  let quanityValue = getQuantity(carts);
 
   const checkBook = (carts, books) => {
     let statusBookById;
     carts.forEach((cart) => {
       books.forEach((book) => {
         if (book.id === cart.idBook) {
-          statusBookById = book
+          statusBookById = book;
         }
       });
     });
-    return statusBookById
-  }
-  let bookByIdCart = checkBook(carts, books)
+    return statusBookById;
+  };
+  let bookByIdCart = checkBook(carts, books);
   const initRent = {
     idUser: Math.random().toString(36).substring(8),
     name: "",
@@ -55,23 +53,29 @@ function BorrowBook() {
     quantity: quanityValue,
     startDate: "",
     dueDate: "",
-  }
- 
+  };
+
   const [rentbook, setRentBook] = useState(initRent);
-  const handleChange = e => {
-    const { name, value } = e.target
-    setRentBook({ ...rentbook, [name]: value })
-  }
-  const minDate = new Date().toJSON().slice(0, 10)
-  const handleSubmit = e => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setRentBook({ ...rentbook, [name]: value });
+  };
+  let minDate = new Date().toJSON().slice(0, 10);
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (rentbook.idBook !== null || rentbook.name !== null || rentbook.position !== null || rentbook.quantity !== null || rentbook.startDate !== null
-      || rentbook.dueDate !== null) {
-      BookAPI.rentBook(rentbook).then(res => {
+    if (
+      rentbook.idBook !== null ||
+      rentbook.name !== null ||
+      rentbook.position !== null ||
+      rentbook.quantity !== null ||
+      rentbook.startDate !== null ||
+      rentbook.dueDate !== null
+    ) {
+      BookAPI.rentBook(rentbook).then((res) => {
         idBooks.forEach((id) => {
-          removeCart(id)
-        })
-      })
+          removeCart(id);
+        });
+      });
     }
     swal({
       title: "You have borrowed successfully!",
@@ -91,8 +95,8 @@ function BorrowBook() {
       description: bookByIdCart.description,
       authorId: bookByIdCart.authorId,
       numberOfPages: bookByIdCart.numberOfPages,
-      status: "borrowing"
-    }).then(res => res)
+      status: "borrowing",
+    }).then((res) => res);
     BookAPI.updateStatusBook(idBooks[1], {
       id: bookByIdCart.id,
       title: bookByIdCart.title,
@@ -105,9 +109,9 @@ function BorrowBook() {
       description: bookByIdCart.description,
       authorId: bookByIdCart.authorId,
       numberOfPages: bookByIdCart.numberOfPages,
-      status: "borrowing"
-    }).then(res => res)
-  }
+      status: "borrowing",
+    }).then((res) => res);
+  };
 
   return (
     <div className="borrow-book">
@@ -145,25 +149,26 @@ function BorrowBook() {
           <input
             type="date"
             name="startDate"
+            min={minDate}
             value={rentbook.startDate}
-            onChange={handleChange} />
+            onChange={handleChange}
+          />
         </Form.Field>
 
         <Form.Field required>
           <label>Due Date</label>
           <input
             type="date"
-            mindate={minDate}
             name="dueDate"
             value={rentbook.dueDate}
-            onChange={handleChange} />
+            onChange={handleChange}
+          />
         </Form.Field>
         <Button type="submit" size="large" color="blue">
           Submit
         </Button>
       </Form>
     </div>
-
   );
 }
 export default BorrowBook;

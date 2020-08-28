@@ -54,7 +54,7 @@ const ListComment = () => {
                                 className="reviewDate createdAt right"
                                 href="/review/show/468815437?book_show_action=true"
                               >
-                                Dec 03, 2012
+                                {comment.date}
                               </a>
                               <span
                                 itemProp="author"

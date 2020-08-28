@@ -19,24 +19,27 @@
       "description": "Could you survive on your own, in the wild, with everyone out to make sure you don't live to see the morning?",
       "authorId": "153394.Suzanne_Collins",
       "numberOfPages": "374 pages",
-      "status": "Not borrowing"
+      "status": "borrowing"
     },
     {
       "id": "120425",
-      "title": "Harry Potter and the Order of the Phoenix",
-      "coverImageSrc": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265l/2.jpg",
-      "rating": "4.49",
+      "title": "Animal Farm",
+      "coverImageSrc": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1424037542l/7613.jpg",
+      "rating": "3.93",
       "genre": [
+        "classics",
+        "fiction",
+        "science-fiction",
+        "dystopia",
         "fantasy",
-        "young-adult",
-        "fiction"
+        "literature"
       ],
-      "price": "$19.34",
+      "price": "$13.43",
       "pricerent": "0.5",
-      "authorName": "J.K. Rowling",
-      "description": "There is a door at the end of a silent corridor. And it’s haunting Harry Pottter’s dreams. Why else would he be waking in the middle of the night, screaming in terror?",
-      "authorId": "1077326.J_K_Rowling",
-      "status": "Not borrowing"
+      "authorName": "George Orwell",
+      "description": "George Orwell's timeless and timely allegorical novel—a scathing satire on a downtrodden society’s blind march towards totalitarianism.",
+      "authorId": "3706.George_Orwell",
+      "status": "borrowing"
     },
     {
       "id": "265741",
@@ -140,12 +143,11 @@
         "literature"
       ],
       "price": "$13.43",
-      "description": "George Orwell's timeless and timely allegorical novel—a scathing satire on a downtrodden society’s blind march towards totalitarianism.",
+      "pricerent": "0.5",
       "authorName": "George Orwell",
+      "description": "George Orwell's timeless and timely allegorical novel—a scathing satire on a downtrodden society’s blind march towards totalitarianism.",
       "authorId": "3706.George_Orwell",
-      "quantity": 100,
-      "status": "Not borrowing",
-      "pricerent": "0.5"
+      "status": "borrowing"
     },
     {
       "id": "11127",
@@ -1070,27 +1072,55 @@
       "body": "The Alchemist is a fantastic book and the storytelling is beautiful. The choice of words are impeccable, full of wisdom and philosophy",
       "bookId": "9780061122415",
       "idUser": "uceb",
-      "rating": "4.2"
+      "rating": "4.2",
+      "date": "2020-8-10"
     },
     {
       "id": "C002",
       "body": "I totally loved it. The story is very enchanting and bursts with optimism which I think is very important in our lives.",
       "bookId": "9780061122415",
-      "rating": "4.2"
+      "rating": "4.2",
+      "date": "2020-8-10"
     },
     {
       "id": "C003",
       "body": "Where did the saying come from: When you want something the whole universe will conspire together to help you get it?",
       "bookId": "9780061122415",
       "idUser": "uceeeeeb",
-      "rating": "4.2"
+      "rating": "4.2",
+      "date": "2020-8-10"
     },
     {
       "id": "120425",
       "body": "My daughter and I loved this book. I am always struggling to find the next book she might like: any recommendations based on the fact that she really liked this one (The fault in our stars) and the Curious incident? Thanks",
       "bookId": "120425",
       "idUser": "ucwwweb",
-      "rating": "4.2"
+      "rating": "4.2",
+      "date": "2020-8-10"
+    },
+    {
+      "body": "Good",
+      "bookId": "2767052",
+      "idUser": "cgf",
+      "rating": "4.2",
+      "date": "2020-08-28T05:11:20.093Z",
+      "id": "b6rKkRU"
+    },
+    {
+      "body": "ffff",
+      "bookId": "2767052",
+      "idUser": "51",
+      "rating": "4.2",
+      "date": "2020-08-28T06:37:11.396Z",
+      "id": "NKh0DPx"
+    },
+    {
+      "body": "dddddddddđđdddđd",
+      "bookId": "2767052",
+      "idUser": "m68",
+      "rating": "4.2",
+      "date": "2020-08-28T08:04:12.842Z",
+      "id": "RQQaBQF"
     }
   ],
   "itemrent": [
@@ -1108,18 +1138,61 @@
       "id": "DK8lNyJ"
     },
     {
-      "idUser": "8t86s",
-      "name": "đ",
-      "position": "đ",
-      "address": "ddd",
+      "idUser": "dpsx",
+      "name": "fff",
+      "position": "fff",
+      "address": "ff",
       "idBooks": [
-        "120425"
+        "2767052"
       ],
       "totalPrice": "0.50",
       "quantity": 1,
-      "startDate": "2020-08-21",
+      "startDate": "2020-08-28",
+      "dueDate": "2020-08-31",
+      "id": "rZHQQEB"
+    },
+    {
+      "idUser": "sulvm",
+      "name": "dddddddd",
+      "position": "dd",
+      "address": "dd",
+      "idBooks": [
+        "2767052"
+      ],
+      "totalPrice": "0.50",
+      "quantity": 1,
+      "startDate": "2020-08-28",
       "dueDate": "2020-08-29",
-      "id": "5_XsnFj"
+      "id": "vi56YX3"
+    },
+    {
+      "idUser": "0lehj",
+      "name": "phuong",
+      "position": "intern",
+      "address": "Phuong",
+      "idBooks": [
+        "120425",
+        "7613"
+      ],
+      "totalPrice": "1.00",
+      "quantity": 2,
+      "startDate": "2020-08-28",
+      "dueDate": "2020-09-05",
+      "id": "1mdpxJa"
+    },
+    {
+      "idUser": "eojb",
+      "name": "phuong",
+      "position": "dd",
+      "address": "",
+      "idBooks": [
+        "2767052"
+      ],
+      "totalPrice": "0.50",
+      "quantity": 1,
+      "startDate": "2020-08-28",
+      "dueDate": "2020-08-29",
+      "id": "Q-oa2DV"
     }
   ],
   "givingbook": [
@@ -1141,20 +1214,164 @@
       "status": "Processing"
     },
     {
-      "idUser": "xfkjk2",
-      "name": "Selena",
+      "idUser": "mkle",
+      "name": "phuong",
       "email": "phuongeunhyuk@gmail.com",
       "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
-      "coverImageSrc": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327872220l/24213.jpg",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
       "genre": [
-        "fiction"
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
       ],
       "price": "12",
       "authorName": "ss",
-      "description": "hhhhhhhhhhhhhh",
+      "description": "gggggggggggggggggggggggggg",
       "rating": 4,
       "status": "Processing",
-      "id": "Y__oYWD"
+      "id": "9_j-jBf"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "vG7KlNd"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "WSLAM3F"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "yv8zpd7"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "nJvSMPc"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "0C_happ"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "hQzc5Y1"
+    },
+    {
+      "idUser": "mkle",
+      "name": "phuong",
+      "email": "phuongeunhyuk@gmail.com",
+      "title": "名古屋高速で運転席窓からペットボトル投げる　自営業の男性（44）を書類送検　愛知県警",
+      "coverImageSrc": "https://image.shutterstock.com/image-photo/bright-spring-view-cameo-island-260nw-1048185397.jpg",
+      "genre": [
+        "fiction",
+        "science-fiction-fantasy",
+        "adult",
+        "adventure",
+        "dragons"
+      ],
+      "price": "12",
+      "authorName": "ss",
+      "description": "gggggggggggggggggggggggggg",
+      "rating": 4,
+      "status": "Processing",
+      "id": "DDjJXmu"
     }
   ],
   "category": [

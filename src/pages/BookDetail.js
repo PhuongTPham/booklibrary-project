@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import { BookContext } from "../context/context";
 import { Button } from "semantic-ui-react";
 
@@ -9,6 +8,7 @@ import BookComment from "../components/BookComment";
 import BestBookEver from "../components/BestBookEver";
 import ListComment from "../components/ListComment";
 import SideBarRight from "../layout/SideBarRight";
+import * as BookAPI from "../utils/apiURLs"
 export default function BookDetail() {
   const { id } = useParams();
   const [book, setBookDetail] = useState({});
@@ -18,17 +18,18 @@ export default function BookDetail() {
   const handleAddCart = () => {
     addCart(id);
   };
-  useEffect(() => {
-    axios
-      .get(`http://localhost:4000/books?id=${id}`)
-      .then((jsonResponse) => {
-        setBookDetail(jsonResponse.data[0])
-        if(jsonResponse.data[0].status === "Not borrowing") {
+  const getDetailById = () => {
+    BookAPI.getById(id).then((jsonResponse) => {
+        setBookDetail(jsonResponse)
+        if(jsonResponse.status === "Not borrowing") {
           setDisableBtn(false)
-        } else if(jsonResponse.data[0].status === "borrowing"){
+        } else if(jsonResponse.status === "borrowing"){
           setDisableBtn(true)
         }
-      });
+      })
+  }
+  useEffect(() => {
+    getDetailById();
   }, []);
  
  return (
@@ -71,7 +72,7 @@ export default function BookDetail() {
                 </div>
                 <div className="wtrButtonContainer">
                   <div className="wtrDown wtrLeft wtrStatusToRead">
-                    <Button onClick={handleAddCart} disabled={disableBtn}s style={{marginLeft: "5px", padding: "0px"}}>Want to borrow</Button>
+                    <Button onClick={handleAddCart} disabled={disableBtn} style={{marginLeft: "5px", padding: "0px"}}>Want to borrow</Button>
                     <div className="wtrPrompt wtrPromptToReview">
                       <a href="/review/edit/11870085">Write a review</a>
                     </div>

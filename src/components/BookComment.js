@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { Form } from "semantic-ui-react";
 import * as BookAPI from "../utils/apiURLs"
+
 const BookComment = ({book}) => {
     let idBook = book.id;
     const initComment = {
         idUser: Math.random().toString(36).substring(10),
         bookId: idBook,
         body: "",
-        rating: "4.2"
+        rating: "4.2",
+        date: new Date().toISOString()
     }
     const [comment, setComment] = useState(initComment)
     const handleChange = e => {
@@ -15,13 +17,16 @@ const BookComment = ({book}) => {
         setComment({ ...comment, [name]: value });
     }
     const handleSubmit = e => {
-        // e.preventDefault();
+        e.preventDefault();
         BookAPI.addComment({
             body: comment.body,
             bookId: book.id,
             idUser: Math.random().toString(36).substring(10),
-            rating: "4.2"
-        }).then(res => console.log(res))
+            rating: "4.2",
+            date: new Date().toISOString()
+        }).then(res => {
+            setComment({body: " "})
+        })
     }
     const handleCancel = () => {
         setComment({body: " "})

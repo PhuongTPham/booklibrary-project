@@ -1,5 +1,5 @@
 import React from 'react'
-import { Rate, Badge } from "antd";
+import { Badge } from "antd";
 
 const ItemBookGiving = ({book}) => {
    const BookStatus = (status) => {
@@ -25,8 +25,6 @@ const ItemBookGiving = ({book}) => {
             <div className= "h2Container gradientHeaderContainer">
               <h2 className="brownBackground">{book.title}</h2>
             </div>
-            <div className="myRating uitext greyText">Rate this book</div>
-            <Rate disabled allowHalf defaultValue={book.rating} />
             {BookStatus(book.status)}
           </div>
         </div>
